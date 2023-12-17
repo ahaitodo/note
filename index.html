@@ -115,6 +115,10 @@ nav a:hover {
     <footer>  
      <p>版权所有 All rights <span id="domainDisplay2"></span> &copy; 2023 | 我的个人网站 My Personal Website</p> 
     </footer>  
+	<script>
+    document.getElementById('domainDisplay1').textContent = '' + window.location.hostname;
+    document.getElementById('domainDisplay2').textContent = '' + window.location.hostname;
+</script>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({id:"21AULIuFPZRkpKqD",ck:"21AULIuFPZRkpKqD",autoTrack:true,hashMode:true})</script>
 </body>  
