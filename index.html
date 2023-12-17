@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站 My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #007bff; 
+            padding: 10px;
+            text-align: center;
+        }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    text-decoration: none; 
+}
+        main {
+            margin: 20px auto;
+            max-width: 950px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+		main h2 {
+        text-align: left; 
+        }
+		#contact p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            line-height: 1.5;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+  .image-links {
+        text-align: left; 
+    }
+    .image-links a {
+        display: inline-block;
+        margin-right: 5px; 
+    }
+    .image-links img {
+        width: 350px; 
+        height: auto; 
+    }
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Welcome to <span id="domainDisplay1"></span></h1>	
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+    <section id="home">
+        <h2>首页 Home</h2>
+        <p>这是我的个人网站，展示有关我的信息和服务。为私人使用，与任何企业或组织无关。This is my personal website, displaying information and services about me. It is for private use and is not affiliated with any business or organization.</p>
+    </section>
+    
+    <section id="about">
+        <h2>关于我 About Me</h2>
+        <p>我是一位热爱技术的开发者，目前正在寻找创业机会和投资伙伴共同建立一个有趣并有意义的网站。I am a developer passionate about technology, currently looking for entrepreneurial opportunities and investment partners to build an interesting and meaningful website together.</p>
+    </section>
+    
+    <section id="services">
+        <h2>服务 Services</h2>
+        <p>提供各种IT解决方案，包括运IT运维、网站开发，定制软件开发等。Offering a variety of IT solutions, including IT operations and maintenance, website development, custom software development, etc.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>联系 Contact</h2>
+        <p>如果您有实力投资本站请联系经纪人阿且: If you have the capability to invest in this site, please contact the broker, Aqie:</p>
+        <p>Email: ljh#qq.com 将#替换为@ replace # with @ </p>
+        <p>WeChat ID: qq4409535</p>
+		<p>Phone: +86 2028962178</p>
+    
+        <div class="image-links">
+        <a href="https://u.jd.com/ZqqgHlj" target="_blank"><img src="img/20231126011351.jpg" alt="JD Flash Sale" /></a> 
+        <a href="https://u.jd.com/ZiqLWl6" target="_blank"><img src="img/20231126005122.jpg" alt="JD Hot List" /></a> 
+    </div>
+	</section>
+    </main>  
+    <footer>  
+     <p>版权所有 All rights <span id="domainDisplay2"></span> &copy; 2023 | 我的个人网站 My Personal Website</p> 
+    </footer>  
+<script>
+document.getElementById('menuToggle').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+    } else {
+        menu.classList.add('active');
+    }
+});
+</script>
+<script>
+    // image-links ad@2023-11-25'
+    document.getElementById('domainDisplay1').textContent = '' + window.location.hostname;
+    document.getElementById('domainDisplay2').textContent = '' + window.location.hostname;
+</script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"21AULIuFPZRkpKqD",ck:"21AULIuFPZRkpKqD",autoTrack:true,hashMode:true})</script>
+</body>  
+</html>
